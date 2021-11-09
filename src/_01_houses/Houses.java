@@ -3,14 +3,22 @@ package _01_houses;
 import java.awt.Color;
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 import org.jointheleague.graphical.robot.Robot;
 
 public class Houses {
 	Robot house = new Robot(50,539 );
 	public void run() {
+	house.setWindowColor(Color.BLACK);	
 	house.setSpeed(100);
+	parse roofType parseint	JOptionPane.showInputDialog("Would you like flat roofs, gable roofs, or both?");
+	if	roofType = flat
+	if roofType = gable
+	if roofType = both
 		for (int i = 0; i < 10; i++) {
 			drawHouse("mixedBag");
+			
 		}
 		
 		
@@ -86,8 +94,7 @@ public void drawHouse (String height, Color color) {
 		
 		Random size = new Random();
 		
-		
-		
+	
 		
 		
 		int wallHeight = 0 ;
