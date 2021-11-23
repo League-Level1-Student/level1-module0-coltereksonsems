@@ -39,9 +39,9 @@ window.pack();
 		// 11. Run your program again. Do you see your message?
 
 		// 12. Use your JLabel to call setIcon(loadImage())
-
-		// 13. Re-pack the JFrame object
-
+marked.setIcon(loadImage());
+	// 13. Re-pack the JFrame object
+window.pack();
 		// 14. Run the program one more time. Do you see the image?
 
 	}
@@ -50,7 +50,7 @@ window.pack();
 		try {
 			return new ImageIcon(ImageIO.read(new MyFirstSwingGUI().getClass().getResourceAsStream("java.png")));
 		} catch (IOException e) {
-			e.printStackTrace()
+			e.printStackTrace();
 			return null;
 		}
 	}
