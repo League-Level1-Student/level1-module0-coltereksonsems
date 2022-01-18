@@ -53,6 +53,16 @@ frame.setTitle("Demanding Buttons");
 		JButton buttonPressed = (JButton) arg0.getSource();
 
 		/* If the buttonPressed was the leftButton.... */
+		if (buttonPressed .equals(leftButton)){
+			rightButton.setPreferredSize(BIG);
+			rightButton.setText("No, CLICK ME!");
+			leftButton.setPreferredSize(SMALL);
+		}
+		if(buttonPressed.equals(rightButton)) {
+			leftButton.setPreferredSize(BIG);
+			leftButton.setText("No, CLICK ME!");
+			rightButton.setPreferredSize(SMALL);
+		}
 		// Set the text of the rightButton to "No, click Me!"
 		// Set the PREFERRED size of the rightButton to BIG
 		// Set the text of the leftButton to "Click Me!"
