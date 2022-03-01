@@ -4,6 +4,8 @@ void setup(){
 }
 
 //Game variables
+
+int score =0;
 int Y=0;
 //Game loop
 int X = (int)random(0,width);
@@ -15,9 +17,23 @@ void draw(){
   ellipse (X,Y,5,5);
   
   if( Y > height) {
+    checkCatch(X);
     Y=0;
     X=(int) random(0,width);
   }
   fill(124,120,120);
-  rect(200,590,10,5);
+  rect(mouseX,490,30,10);
+  
+  
+
+     fill(0, 0, 0);
+    textSize(16);
+    text("Score: " + score, 20, 20);
 }
+void checkCatch(int x){
+         if (x > mouseX && x < mouseX+100)
+            score++;
+         else if (score > 0) 
+            score--;
+        println("Your score is now: " + score);
+ }
